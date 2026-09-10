@@ -10,16 +10,16 @@ router = Router()
 
 # xoxlagan habar kelsa Xush kelibsiz degan yozuv chiqaradi
 
-@router.message()
+@router.message() # message() xoxlagan text uchun yani hohlagan text kelsa javob beradi
 async def start(message:types.Message):
     await message.reply("Xush kelibsiz")
-    
+
 
 @router.message(Command("help"))
 async def help1(message:types.Message):
-    await message.reply("Sizga qanday yordam bera olaman")
+    await message.reply("Sizga qanday yordam bera olaman") # aynan yozgan textni belgilab javob sifatida qaytaradi
 
-    await message.answer(f"sizga yozgan habar: {message.text}")
+    await message.answer(f"sizga yozgan habar: {message.text}") # answer hamma text uchun javob qaytaradi
 
 
 # hamma kodlarni  royhatdan otkazib qoyishimiz >>>  main()
