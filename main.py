@@ -22,7 +22,7 @@ async def help1(message:types.Message):
     await message.answer(f"sizga yozgan habar: {message.text}")
 
 
-# oxirini royhatdan otkazib qoyishimiz >>>  main()
+# hamma kodlarni  royhatdan otkazib qoyishimiz >>>  main()
 
 async def main():
     
